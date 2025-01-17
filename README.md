@@ -1,6 +1,8 @@
 # Just some laravel notes for me
 
-Create product: [Link Text](#create-product).
+[Create product](#create-product).
+[Laravel Breeze](#laravel-breeze).
+
 
 # Create product
 ## Create products table
@@ -68,8 +70,9 @@ After that lets add foreach of our products
 @endforeach
 ```
 
+#Laravel Breeze
 
-# Add Login/Register with Laravel Breeze to new/existing project
+## Add Login/Register with Laravel Breeze to new/existing project
 
 ```bash
 composer require laravel/breeze
