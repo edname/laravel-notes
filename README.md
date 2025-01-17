@@ -57,7 +57,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 ```
 
 
-Let's create new view product.blade.php
+## Let's create view product.blade.php
 After that lets add foreach of our products
 ```laravel
 @foreach($products as $product)
