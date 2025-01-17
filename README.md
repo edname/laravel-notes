@@ -1,6 +1,6 @@
 # Just some laravel notes for me
 
-Link to the Create product: [Link Text](#sample-section).
+Create product: [Link Text](#create-product).
 
 # Create product
 ## Create products table
