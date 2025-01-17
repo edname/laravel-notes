@@ -1,13 +1,11 @@
 # Just some laravel notes for me
 
-## Heading
-
-Create products table
+## Create products table
 ```
 php artisan make:migration create_productss_table
 ```
 
-Add required fields to generated migration file
+## Add required fields to generated migration file
 ```
 $table->string('name'); 
 ```
@@ -15,24 +13,24 @@ $table->string('name');
 $table->text('text');
 ```
 
-Do migration
+## Do migration
 ```
 php artisan migrate
 ```
 
-If you need to rollback
+## If you need to rollback
 ```
 php artisan migrate:rollback
 ```
 
-Create product controller
+## Create product controller
 ```
 php artisan make:controller ProductController
 ```
 Lets edit ProductController
 Add name space on top
 ```
-use App\Models\Post;
+use App\Models\Product;
 ```
 Retrieve all product and assign to variable
 ```
@@ -43,6 +41,10 @@ return view with assigned variable
 return view('product', compact('products')); 
 ```
 
+## Create product model
+```
+php artisan make:model Product
+```
 Edit Models/Post.php
 ```
 use Illuminate\Database\Eloquent\Factories\HasFactory;
