@@ -1,7 +1,8 @@
 # Just some laravel notes for me
 
+# Create product
 ## Create products table
-```
+```bash
 php artisan make:migration create_productss_table
 ```
 
@@ -14,17 +15,17 @@ $table->text('text');
 ```
 
 ## Do migration
-```
+```bash
 php artisan migrate
 ```
 
 ## If you need to rollback
-```
+```bash
 php artisan migrate:rollback
 ```
 
 ## Create product controller
-```
+```bash
 php artisan make:controller ProductController
 ```
 Lets edit ProductController
@@ -42,7 +43,7 @@ return view('product', compact('products'));
 ```
 
 ## Create product model
-```
+```bash
 php artisan make:model Product
 ```
 Edit Models/Post.php
@@ -59,8 +60,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 ## Let's create view product.blade.php
 After that lets add foreach of our products
-```laravel
+```
 @foreach($products as $product)
   <p>{{ $product->title }}</p>
 @endforeach
+```
+
+
+# Add Login/Register with Laravel Breeze to new/existing project
+
+```bash
+composer require laravel/breeze
+```
+```bash
+php artisan breeze:install
 ```
