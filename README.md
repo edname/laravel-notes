@@ -70,7 +70,7 @@ After that lets add foreach of our products
 @endforeach
 ```
 
-#Laravel Breeze
+# Laravel Breeze
 
 ## Add Login/Register with Laravel Breeze to new/existing project
 
